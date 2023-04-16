@@ -1,0 +1,143 @@
+.nav_div_active {
+  width: 16vw;
+  background: linear-gradient(to top, black, rgb(3, 3, 117));
+  height: 100vh;
+  border-right: 0.3vw solid rgb(246, 239, 239);
+  position: fixed;
+  transition: all .5s;
+
+}
+
+.nav_div_inactive {
+  transform: translateX(-20vw);
+  transition: .5s;
+  width: 16vw;
+  background: linear-gradient(to top, black, rgb(3, 3, 117));
+  height: 100vh;
+  border-right: 0.3vw solid rgb(246, 239, 239);
+  position: fixed;
+}
+
+.nav_ul li {
+  margin: 25% auto 25% auto;
+}
+
+.nav_ul li a {
+  color: aqua;
+  text-decoration: none;
+}
+
+.nav_ul li:first-child {
+  margin-top: 20%;
+}
+
+.imgnav {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+
+.footer {
+  height: 40px;
+  position: relative;
+  color: aqua;
+  bottom: 0;
+
+}
+
+
+@media screen and (max-width:1000px) and (min-width:500px) {
+  .nav_div_active {
+    width: 100%;
+    background: linear-gradient(to top, black, rgb(3, 3, 117));
+    transition: all .5s;
+    display: flex;
+    z-index: 1;
+    height: 40%;
+  }
+
+  .nav_div_inactive {
+    width: 100%;
+    background: linear-gradient(to top, black, rgb(3, 3, 117));
+    z-index: 1;
+    display: flex;
+    height: 40%;
+    transform: translateY(-100%);
+    transition: all .5s;
+  }
+
+  .nav_ul {
+    display: flex;
+    justify-content: center;
+    margin: 15% auto auto auto;
+  }
+
+  .nav_ul li {
+    list-style: none;
+    margin: 40px;
+  }
+
+  .nav_ul li:first-child {
+    margin-top: auto;
+    margin-left: 0px;
+  }
+
+  .navintro {
+    margin-left: 8%;
+    margin-bottom: 8%;
+  }
+
+  .footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .nav_div_active {
+    width: 100%;
+    background: linear-gradient(to top, black, rgb(3, 3, 117));
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    transition: all .5s;
+  }
+
+  .nav_div_inactive {
+    width: 100%;
+    background: linear-gradient(to top, black, rgb(3, 3, 117));
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    transform: translateY(-100%);
+    transition: all .5s;
+  }
+
+  .nav_ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .nav_ul li {
+    list-style: none;
+
+  }
+
+  .nav_ul li:first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navintro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    display: none;
+  }
+}

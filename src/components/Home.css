@@ -1,0 +1,169 @@
+.Home_parent_div_active {
+    position: relative;
+    left: 16.3vw;
+    background-image: url('https://wallpaperaccess.com/full/5673719.jpg');
+    height: 100vh;
+    width: 83.7vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+.Home_parent_div_inactive {
+    position: relative;
+    left: 0;
+    background-image: url('https://wallpaperaccess.com/full/5673719.jpg');
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+.desc_button{
+    top: 40vh;    
+    width: 100%;
+    position: sticky;
+}
+.mydesc_home {
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    font-family: "Libre", "Baskerville";
+    color: rgb(255, 253, 251);
+    text-shadow: 0px 2px 5px rgba(26, 25, 25, 0.738);
+    font-size: 60px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.above_back_imghome {
+    position: absolute;
+    background: linear-gradient(285deg, rgba(0, 119, 255, 0.548), rgba(0, 0, 0, 0.581) 50%);
+    height: 100%;
+    width: 100%;
+
+}
+
+.home_icons_div_active {
+    display: flex;
+    flex-direction: column;
+    width: 4.9em;
+    transition: .5s;
+    /* margin-top: 40px; */
+}
+.home_icons_div_inactive {
+    display: flex;
+    flex-direction: column;
+    width: 4.9em;
+    margin-top: 40px;
+    transition: .5s;
+    margin-left:  -5px;
+    position: absolute;
+}
+
+.imglogo {
+    height: 42px;
+    width: 42px;
+    margin-right: 10px;
+}
+
+.home_icons {
+    display: flex;
+    margin-top: 27px;
+    margin-left: 25px;
+    align-items: center;
+    color: rgba(18, 16, 16, 0.247);
+    border: 1px solid rgb(34, 16, 16);
+    padding: 2px 6px 2px 6px;
+    background: linear-gradient(45deg, rgb(255, 192, 203), white );
+    transition: 5s;
+    border-radius: 5px;
+    box-shadow: 0px 5px 11px rgba(16, 16, 16, 0.207);
+}
+
+.home_icons_div_fchild:hover {
+    color: black;
+    animation-name: iconsfchild;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes iconsfchild {
+    from {
+        width: 4.8em;
+    }
+
+    to {
+        width: 16em;
+    }
+}
+
+.home_icons_div_schild:hover {
+    color: black;
+    animation-name: iconsschild;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes iconsschild {
+    from {
+        width: 4.8em;
+        
+    }
+
+    to {
+        width: 9em;
+        
+    }
+}
+
+
+
+.download_button {
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(101, 173, 254), rgb(245, 245, 237));
+    border-radius: 8px;
+    font-family: "Libre", "Baskerville";
+    font-size: 18px;
+    border: none;
+}
+
+.download_button:hover {
+    height: 45px;
+    width: 230px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.252);
+    transition: 0.3s;
+}
+
+.download_button a {
+
+    text-decoration: none;
+}
+@media screen and (max-width:1000px) and (min-width:500px) {
+    .Home_parent_div_active {
+        position: relative;
+        left: 0px;
+        background-image: url('https://wallpaperaccess.com/full/5673719.jpg');
+        min-height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   
+    
+}
+@media screen and (max-width:500px){
+ .Home_parent_div_active {
+        position: relative;
+        left: 0px;
+        background-image: url('https://wallpaperaccess.com/full/5673719.jpg');
+        min-height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+}
