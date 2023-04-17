@@ -23,7 +23,7 @@ function Home(props) {
         <div className={props.count===true?"Home_parent_div_active":"Home_parent_div_inactive"}>
             <div className="above_back_imghome"  >
               
-                <div className={props.count?"home_icons_div_active":"home_icons_div_inactive"}>
+                <div className={props.count===true?"home_icons_div_active":"home_icons_div_inactive"}>
                     <p className="home_icons home_icons_div_fchild"><img className="imglogo" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="" /> <b>gagan261115@gmail.com</b></p>
                     <p className="home_icons home_icons_div_schild "><img className="imglogo" src="https://www.iconpacks.net/icons/1/free-phone-icon-1-thumb.png" alt="" /><b> 8931075977</b></p>
 

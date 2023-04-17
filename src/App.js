@@ -15,7 +15,7 @@ import {
 
 function App() {
  
-  const [count,setcount]=useState(false);
+  const [count,setcount]=useState(true);
     const ToggleNavbar=()=>{
    setcount(!count);
   }
@@ -32,9 +32,9 @@ function App() {
         <BrowserRouter >
           <Nav count={count} />
           <Routes>
-            <Route path='/'  element={<Home count ={count}/>} />
-            <Route path='/skills'  element={<Skills count={count} />} />
-            <Route path='/projects'  element={<ProjectCards  count={count} />} />
+            <Route path='Portfolio_website/'  element={<Home count ={count}/>} />
+            <Route path='Portfolio_website/skills'  element={<Skills count={count} />} />
+            <Route path='Portfolio_website/projects'  element={<ProjectCards  count={count} />} />
       
           </Routes>
         </BrowserRouter>

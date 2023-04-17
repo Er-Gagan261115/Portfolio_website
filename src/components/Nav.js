@@ -23,9 +23,9 @@ function Nav(props) {
                 }}>Full Stack Developer</p>
             </div>
             <ul className="nav_ul">
-                <li><Link  to="/">Home</Link></li>
-                <li><Link  to="/skills">Skills</Link></li>
-                <li><Link  to="/projects">Projects</Link></li>
+                <li><Link  to="Portfolio_website/">Home</Link></li>
+                <li><Link  to="Portfolio_website/skills">Skills</Link></li>
+                <li><Link  to="Portfolio_website/projects">Projects</Link></li>
             
             </ul>
             <div className="footer">
