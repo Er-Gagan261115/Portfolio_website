@@ -122,8 +122,10 @@ color: rgba(0, 0, 0, 0.149);
         
     }
 }
-.home_icons_div_tchild:hover {
+.home_icons_div_tchild:hover a  {
     color: black;
+}
+.home_icons_div_tchild:hover  {
     animation-name: iconstchild;
     animation-duration: 0.5s;
     animation-iteration-count: 1;
