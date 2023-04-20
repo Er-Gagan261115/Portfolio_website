@@ -23,13 +23,14 @@
     width: 100%;
     position: sticky;
 }
+
 .mydesc_home {
     font-size: 40px;
     color: rgb(0, 0, 0);
     width: 100%;
     font-family: "Libre", "Baskerville";
-    color: rgb(255, 253, 251);
-    text-shadow: 0px 2px 5px rgba(26, 25, 25, 0.738);
+    color: rgb(255, 210, 12);
+    text-shadow: 0px 3px 5px rgb(0, 0, 0);
     font-size: 60px;
     margin: auto;
     margin-bottom: 30px;
@@ -80,6 +81,10 @@
     box-shadow: 0px 5px 11px rgba(16, 16, 16, 0.207);
 }
 
+.home_icons_div_tchild a{
+text-decoration: none;
+color: rgba(0, 0, 0, 0.149);
+}
 .home_icons_div_fchild:hover {
     color: black;
     animation-name: iconsfchild;
@@ -114,6 +119,25 @@
 
     to {
         width: 9em;
+        
+    }
+}
+.home_icons_div_tchild:hover {
+    color: black;
+    animation-name: iconstchild;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes iconstchild {
+    from {
+        width: 4.8em;
+        
+    }
+
+    to {
+        width: 7em;
         
     }
 }

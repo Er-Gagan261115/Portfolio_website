@@ -3,7 +3,7 @@ import './Home.css'
 import './Nav.css'
 
 function Home(props) {
-   
+
 
     const download_onclick = () => {
         fetch("resume.pdf").then(response => {
@@ -20,26 +20,36 @@ function Home(props) {
 
     }
     return (
-        <div className={props.count===true?"Home_parent_div_active":"Home_parent_div_inactive"}>
+        <div className={props.count === true ? "Home_parent_div_active" : "Home_parent_div_inactive"}>
             <div className="above_back_imghome"  >
-              
-                <div className={props.count===true?"home_icons_div_active":"home_icons_div_inactive"}>
-                    <p className="home_icons home_icons_div_fchild"><img className="imglogo" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="" /> <b>gagan261115@gmail.com</b></p>
-                    <p className="home_icons home_icons_div_schild "><img className="imglogo" src="https://www.iconpacks.net/icons/1/free-phone-icon-1-thumb.png" alt="" /><b> 8931075977</b></p>
+
+                <div className={props.count === true ? "home_icons_div_active" : "home_icons_div_inactive"}>
+                    <p className="home_icons home_icons_div_fchild">
+                        <img className="imglogo" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="" />
+                        <b>gagan261115@gmail.com</b>
+                    </p>
+                    <p className="home_icons home_icons_div_schild ">
+                        <img className="imglogo" src="https://www.iconpacks.net/icons/1/free-phone-icon-1-thumb.png" alt="" />
+                        <b> 8931075977</b>
+                    </p>
+                    <p className="home_icons home_icons_div_tchild ">
+                    <img className="imglogo" src="https://pngimg.com/uploads/github/github_PNG40.png" alt="" /> 
+                        <a href="https://github.com/Er-Gagan261115?tab=repositories" target="_blank" ><b>Github</b></a>
+                    </p>
 
                 </div>
 
-               <div className="desc_button">
-               <h3 className="mydesc_home">
-                    I Am A MERN
-                    <br /> Stack Developer
-                </h3>
-                <button className="download_button"
-                    onClick={download_onclick}
-                >
-                    Download CV
-                </button>
-               </div>
+                <div className="desc_button">
+                    <h3 className="mydesc_home">
+                        I Am A MERN
+                        <br /> Stack Developer
+                    </h3>
+                    <button className="download_button"
+                        onClick={download_onclick}
+                    >
+                        Download CV
+                    </button>
+                </div>
             </div>
 
         </div>

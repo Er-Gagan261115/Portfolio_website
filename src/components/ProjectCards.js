@@ -6,10 +6,22 @@ import landingpage from './projectvideos/landing page.webm'
 import calculator from './projectvideos/calculator.webm'
 import Todolist from './projectvideos/to do list.webm'
 import TextEditor from './projectvideos/Text Editor.webm'
+import Portfolio from './projectvideos/Portfolio.webm'
+import Weather from './projectvideos/Weather app.webm'
 import Projects from './Projects'
 import './Projects.css'
 function ProjectCards(props){
     const arr = [ {
+        Name:"Portfolio Website",
+        link:Portfolio,
+        languages:["React"]
+    },
+    {
+        Name:"Weather App",
+        link:Weather,
+        languages:["React"]
+    },
+    {
         Name:"Text Editor",
         link:TextEditor,
         languages:["React"]
