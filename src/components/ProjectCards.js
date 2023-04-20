@@ -14,17 +14,17 @@ function ProjectCards(props){
     const arr = [ {
         Name:"Portfolio Website",
         link:Portfolio,
-        languages:["React"]
+        languages:["React.Js"]
     },
     {
         Name:"Weather App",
         link:Weather,
-        languages:["React"]
+        languages:["React.Js"]
     },
     {
         Name:"Text Editor",
         link:TextEditor,
-        languages:["React"]
+        languages:["React.Js"]
     },
      {
         Name:"Calculator",
@@ -59,7 +59,7 @@ function ProjectCards(props){
    
        
     return(
-        <div className={props.count===true?"project_parentdiv_active":"project_parentdiv_inactive"}>
+        <div className="project_parentdiv_inactive">
         <Projects arr={arr} count={props.count}/>
         </div>
     )

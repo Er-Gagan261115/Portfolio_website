@@ -1,14 +1,5 @@
-.Home_parent_div_active {
-    position: relative;
-    left: 16.3vw;
-    background-image: url('https://wallpaperaccess.com/full/5673719.jpg');
-    height: 100vh;
-    width: 83.7vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: .5s;
-}
-.Home_parent_div_inactive {
+
+.Home_parent_div {
     position: relative;
     left: 0;
     background-image: url('https://wallpaperaccess.com/full/5673719.jpg');
@@ -19,9 +10,10 @@
     transition: .5s;
 }
 .desc_button{
-    top: 40vh;    
+    top: 44vh;    
     width: 100%;
     position: sticky;
+    margin: auto;
 }
 
 .mydesc_home {
@@ -44,14 +36,8 @@
 
 }
 
-.home_icons_div_active {
-    display: flex;
-    flex-direction: column;
-    width: 4.9em;
-    transition: .5s;
-    /* margin-top: 40px; */
-}
-.home_icons_div_inactive {
+
+.home_icons_div {
     display: flex;
     flex-direction: column;
     width: 4.9em;
@@ -119,7 +105,6 @@ color: rgba(0, 0, 0, 0.149);
 
     to {
         width: 9em;
-        
     }
 }
 .home_icons_div_tchild:hover a  {
@@ -144,8 +129,6 @@ color: rgba(0, 0, 0, 0.149);
     }
 }
 
-
-
 .download_button {
     height: 40px;
     width: 170px;
@@ -168,28 +151,40 @@ color: rgba(0, 0, 0, 0.149);
 
     text-decoration: none;
 }
-@media screen and (max-width:1000px) and (min-width:500px) {
-    .Home_parent_div_active {
-        position: relative;
-        left: 0px;
-        background-image: url('https://wallpaperaccess.com/full/5673719.jpg');
-        min-height: 100vh;
-        width: 100vw;
-        background-size: cover;
-        background-repeat: no-repeat;
+@media screen and (max-width:500px) {
+    .mydesc_home {
+        font-size: 40px;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        font-family: "Libre", "Baskerville";
+        color: rgb(255, 210, 12);
+        text-shadow: 0px 3px 5px rgb(0, 0, 0);
+        font-size: 45px;
     }
-   
-    
+    .desc_button{
+        top: 44vh;    
+        width: 90%;
+        position: sticky;
+    }
 }
-@media screen and (max-width:500px){
- .Home_parent_div_active {
-        position: relative;
-        left: 0px;
-        background-image: url('https://wallpaperaccess.com/full/5673719.jpg');
-        min-height: 100vh;
-        width: 100vw;
-        background-size: cover;
-        background-repeat: no-repeat;
+@media screen and (max-width:300px) {
+    .home_icons_div_fchild:hover {
+        color: black;
+        animation-name: iconsfchild;
+        animation-duration: .5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        transition: .5s;
     }
     
+    @keyframes iconsfchild {
+        from {
+            width: 4.8em;
+        }
+    
+        to {
+            width: 16em;
+            padding: .5px;
+        }
+    }
 }

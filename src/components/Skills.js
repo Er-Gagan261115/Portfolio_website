@@ -11,12 +11,10 @@ import Cpp from './icons/cpp.jpg'
 import Nodejs from './icons/nodejs.jpg'
 import Mongodb from './icons/mongodb.jpg'
 import Express from './icons/express.jpg'
-function Skills(props) {
-    // useEffect(()=>{
-    //     console.log(props.count);
-    // })
+function Skills() {
+  
     return (
-        <div className={props.count===true?'skills_parentdiv_active':"skills_parentdiv_inactive"}>
+        <div className="skills_parentdiv">
             <h2 className='skills_parentdiv_firsth2'>SKILLS</h2>
 
             <div className='skills_parentdiv_firstdivchilds'>

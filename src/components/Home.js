@@ -20,10 +20,10 @@ function Home(props) {
 
     }
     return (
-        <div className={props.count === true ? "Home_parent_div_active" : "Home_parent_div_inactive"}>
+        <div className="Home_parent_div">
             <div className="above_back_imghome"  >
 
-                <div className={props.count === true ? "home_icons_div_active" : "home_icons_div_inactive"}>
+                <div className= "home_icons_div">
                     <p className="home_icons home_icons_div_fchild">
                         <img className="imglogo" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="" />
                         <b>gagan261115@gmail.com</b>

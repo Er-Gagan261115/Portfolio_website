@@ -1,13 +1,5 @@
-.skills_parentdiv_active {
-    position: relative;
-    left: 16.3vw;
-    min-height: 100vh;
-    height: fit-content;
-    width: 82.6vw;
-    background: linear-gradient(45deg, rgb(4, 4, 4), rgb(15, 3, 69));
-    transition: .5s;
-}
-.skills_parentdiv_inactive {
+
+.skills_parentdiv {
         position: relative;
         left: 0;
         background: linear-gradient(45deg, rgb(4, 4, 4), rgb(15, 3, 69));
@@ -64,7 +56,7 @@
     background: linear-gradient(105deg, white, rgb(0, 255, 247));
     box-shadow: 1px 3px 10px rgba(74, 70, 70, 0.289);
     border-radius: 5px;
-    width: 45vw;
+    width: 60vw;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
@@ -82,35 +74,30 @@ margin-right: 15px;
 margin-left: 10px;
 padding: 5px;
 }
-@media screen and (max-width:1000px) and (min-width:500px) {
-    .skills_parentdiv_active {
-        position: relative;
-        left: 0px;
-        min-height: 100vh;
-        height: fit-content;
-        width: 100vw;
-        background: linear-gradient(45deg, rgb(4, 4, 4), rgb(15, 3, 69));
-    }
-}
-@media screen and (max-width:500px){
-    .skills_parentdiv_active {
-        position: relative;
-        left: 0px;
-        min-height: 100vh;
-        height: fit-content;
-        width: 100vw;
-        background: linear-gradient(45deg, rgb(4, 4, 4), rgb(15, 3, 69));
-    }
+
+@media screen and (max-width:900px){
+    
     .skills_parentdiv_firstdivchilds {
         margin-top: 60px;
         background: linear-gradient(105deg, white, rgb(0, 255, 247));
         box-shadow: 1px 3px 10px rgba(74, 70, 70, 0.289);
         border-radius: 5px;
         width: 75%;
-        margin-left: auto;
-        margin-right: auto;
         padding: 10px;
         margin-bottom: 20px;
         height: fit-content;
     }
 }
+/* @media screen and (min-width:500px) and (max-width:900px){
+    
+    .skills_parentdiv_firstdivchilds {
+        margin-top: 60px;
+        background: linear-gradient(105deg, white, rgb(0, 255, 247));
+        box-shadow: 1px 3px 10px rgba(74, 70, 70, 0.289);
+        border-radius: 5px;
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 20px;
+        height: fit-content;
+    }
+} */

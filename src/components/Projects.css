@@ -1,15 +1,4 @@
-.project_parentdiv_active{
-    position: relative;
-    left: 16.3vw;
-    min-height: 100vh;
-    max-height:  fit-content;
-    width: 82.6vw;
-    background:linear-gradient(105deg,rgb(6, 6, 82),black);
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    transition: .5s;
-}
+
 .project_parentdiv_inactive {
     position: relative;
     left: 0;
@@ -38,16 +27,6 @@
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.496);
 }
 @media (max-width:1000px) and (min-width:500px){
-    .project_parentdiv_active{
-        position: relative;
-        left: 0;
-        min-height:  fit-content;
-        width: 100vw;
-        background:linear-gradient(105deg,rgb(6, 6, 82),black);
-        display: flex;
-        justify-content: center;
-        
-    }
     .project_containers{
         background: linear-gradient(45deg,rgb(20, 92, 235),rgb(6, 237, 245) 70%);
         color: rgb(0, 0, 0);
@@ -55,30 +34,35 @@
         height:250px;
         width: 22%;
         padding: 6px;
-        margin: 30px ;
+        margin: 45px 30px 30px ;
+        border-radius: 10px;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.326);
+    }
+}
+@media (max-width:664px) and (min-width:500px){
+    .project_containers{
+        background: linear-gradient(45deg,rgb(20, 92, 235),rgb(6, 237, 245) 70%);
+        color: rgb(0, 0, 0);
+        border: 2px solid black;
+        min-height:fit-content;
+        height: 240px;
+        width: 28%;
+        padding: 6px;
+        margin: 45px 30px 30px ;
         border-radius: 10px;
         box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.326);
     }
 }
 @media screen and (max-width:500px){
-    .project_parentdiv_active{
-        position: relative;
-        left: 0;
-        min-height:  fit-content;
-        width: 100vw;
-        background:linear-gradient(105deg,rgb(6, 6, 82),black);
-        display: flex;
-        justify-content: center;
-        
-    }
     .project_containers{
         background: linear-gradient(45deg,rgb(20, 92, 235),rgb(6, 237, 245) 70%);
         color: rgb(0, 0, 0);
         border: 2px solid black;
-        height:220px;
+        min-height: fit-content;
+        height:230px;
         width: 50%;
         padding: 6px;
-        margin: 30px ;
+        margin: 30px  ;
         border-radius: 10px;
         box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.326);
 }
