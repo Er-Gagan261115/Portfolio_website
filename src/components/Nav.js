@@ -10,7 +10,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './Nav.css'
 
 function Nav() { 
-    const [count,setcount]=useState(true);
+    const [count,setcount]=useState(false);
     const ToggleNavbar=()=>{
    setcount(!count);
   }

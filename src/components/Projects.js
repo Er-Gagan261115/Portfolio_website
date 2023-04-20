@@ -17,7 +17,7 @@ function Projects(props) {
                     marginTop: "20px"
                 }} src={ele.link} controls>
                 </video>
-                <strong>Languages:
+                <strong>Built Using:
                     {ele.languages.map((lang) => {
                         return (
                             <span> {lang}   </span>

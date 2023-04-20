@@ -59,10 +59,10 @@
         color: rgb(0, 0, 0);
         border: 2px solid black;
         min-height: fit-content;
-        height:230px;
-        width: 50%;
+        height:250px;
+        width: 70%;
         padding: 6px;
-        margin: 30px  ;
+        margin: 40px  ;
         border-radius: 10px;
         box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.326);
 }
