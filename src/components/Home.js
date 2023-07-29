@@ -41,8 +41,8 @@ function Home(props) {
 
                 <div className="desc_button">
                     <h3 className="mydesc_home">
-                        I Am A MERN
-                        <br /> Stack Developer
+                         MERN Stack
+                        <br />  Developer
                     </h3>
                     <button className="download_button"
                         onClick={download_onclick}
